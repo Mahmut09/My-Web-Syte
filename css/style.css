@@ -34,6 +34,11 @@ li {
     z-index: 9;
 }
 
+.nav-link {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+
 .nav-link i {
     font-size: 20px;
     margin-bottom: 20px;
@@ -69,10 +74,16 @@ li {
     padding: 0;
     margin: 0;
     padding-top: 7px;
+    transition: .3s;
+    padding: 0 8px;
 }
 
 .navbar-brand img {
     width: 50px;
+}
+
+.navbar-brand:hover {
+    filter: brightness(0.5);
 }
 
 .wrapper {
@@ -317,6 +328,49 @@ li {
     content: url(../img/js.png);
     left: -315px;
     top: -91px;
+}
+
+.contact-a {
+    text-transform: unset !important;
+    color: #08fdd8;
+    transition: .08s;
+}
+
+.contact-a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #08fdd8ad;
+    color: #08fdd8ad;
+}
+
+.sphere-content {
+    position: absolute;
+    left: 73%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tagcloud {
+    font-size: 18px;
+    color: #e0dfdf;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.tagcloud--item {
+    padding: 2px 4px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.tagcloud--item:hover {
+    opacity: 1 !important;
+    z-index: 100 !important;
+    color: #08fdd8;
+}
+
+.light .tagcloud--item {
+    color: #fff;
 }
 
 @keyframes spin {

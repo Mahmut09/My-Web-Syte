@@ -95,28 +95,3 @@ aboutMe.addEventListener('mouseout', (event) => {
 
     }
 });
-
-
-
-    
-
-
-  let scale = 1;
-
-    const handler = (event) => {
-        let delta = event.deltaY || event.detail || event.wheelDelta;
-
-        // отмасштабируем при помощи CSS
-        if (delta < 0) scale += 0.1;
-        else scale -= 0.1;
-
-        event.target.style.transform = event.target.style.WebkitTransform = event.target.style.MsTransform = 'scale(' + scale + ')';
-
-        // event.target.style.zoom = scale;
-
-        // отменим прокрутку
-        event.preventDefault();
-    }
-
-
-  aboutMe.addEventListener("wheel", handler);

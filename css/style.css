@@ -10,8 +10,8 @@
 
 * {
     box-sizing: border-box;
-    overflow: hidden;
     user-select: none;
+    overflow: hidden;
 }
 
 body {
@@ -112,7 +112,7 @@ li {
     font-family: VerdanaBold;
 }
 
-.text-zone h1::before {
+.home-tags h1::before {
     content: '<h1>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
@@ -122,7 +122,7 @@ li {
     left: 5px;
 }
 
-.text-zone h1::after {
+.home-tags h1::after {
     content: '</h1>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
@@ -186,10 +186,157 @@ li {
     color: #dfdfdf;
 }
 
+.soc i {
+    color: #ffffff80;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.soc i:hover {
+    color: #08fdd8;
+}
+
+.blue-text {
+    color: #08fdd8 !important;
+    padding-bottom: 25px;
+}
+
+.text-tags::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.text-tags::after {
+    content: '</h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    left: 5px;
+    top: 77px;
+}
+
+.text-zone-p {
+    color: #fff;
+    width: 40%;
+}
+
+.text-zone-p {
+    margin-top: 23px;
+}
+
+.aboute-wrapper {
+    background-image: none;
+}
+
+.about-text-zone {
+    top: 40%;
+}
+
+.time-line {
+    margin-top: 4em;
+}
+
+#pyramid {
+    position: absolute;
+    left: 60%;
+    margin-left: 120px;
+    top: 50%;
+    margin-top: -210px;
+    height: 500px;
+    width: 100px;
+    transform-style: preserve-3d;
+    animation: spin 10s linear infinite;
+    transform-origin: 116px 200px 116px;
+    overflow: visible;
+}
+
+#pyramid>div {
+    position: absolute;
+    border-style: solid;
+    border-width: 200px 0 200px 346px;
+    transform-origin: 0 0;
+    overflow: visible;
+}
+
+#pyramid>div:after {
+    position: absolute;
+    color: #fff;
+    left: -311px;
+    top: -69px;
+    text-align: center;
+    opacity: .6;
+}
+
+/* rgba(50 ,50 ,50 , .9) */
+
+#pyramid>div:first-child {
+    border-color: transparent transparent transparent rgba(66, 9, 9, 0.6);
+    transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+}
+
+#pyramid>div:first-child:after {
+    position: absolute;
+    content: url(../img/html.png);
+}
+
+#pyramid>div:nth-child(2) {
+    border-color: transparent transparent transparent rgba(21, 45, 61, 0.6);
+    transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+}
+
+#pyramid>div:nth-child(2):after {
+    position: absolute;
+    content: url(../img/css.png);
+}
+
+#pyramid>div:nth-child(3) {
+    border-color: transparent transparent transparent rgba(8, 51, 19, 0.9);
+    transform: rotateX(60deg) rotateY(19.5deg);
+}
+
+#pyramid>div:nth-child(3):after {
+    position: absolute;
+    width: 150px;
+    content: url(../img/vue.png);
+}
+
+#pyramid>div:nth-child(4) {
+    border-color: transparent transparent transparent rgba(74, 78, 12, 0.8);
+    transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+}
+
+#pyramid>div:nth-child(4):after {
+    position: absolute;
+    width: 150px;
+    content: url(../img/js.png);
+    left: -315px;
+    top: -91px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    }
+    to {
+        transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+    }
+}
+
 @keyframes blast {
     0% {
         transform: scaleX(1);
         transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(0.85);
+        transform: scaleX(0.85);
     }
 
     50% {

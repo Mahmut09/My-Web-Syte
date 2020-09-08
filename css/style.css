@@ -245,7 +245,7 @@ li {
     background-image: none;
 }
 
-.about-text-zone {
+.pages-text-zone {
     top: 40%;
 }
 
@@ -371,6 +371,83 @@ li {
 
 .light .tagcloud--item {
     color: #fff;
+}
+
+.contact {
+    margin-top: 2.4em;
+}
+
+.contact input, .contact textarea {
+    border: 0;
+    border-radius: 2px;
+    font-family: 'Verdana';
+    color: #757575;
+    background: no-repeat bottom, 50% calc(100% - 1px);
+    background-size: 0 100%;
+    background-image: linear-gradient(0deg, #08fdd8 2px, rgba(156, 39, 176, 0) 0);
+    background-color: #2b2b2b;
+}
+
+input[name='subject'] {
+    display: block;
+
+}
+
+.contact input {
+    height: 50px;
+    padding: 0 20px;
+    width: 600px;
+    margin-bottom: 1em;
+}
+
+.name-email input {
+    width: 294px;
+}
+
+.name-email input:first-child {
+    margin-right: .5em;
+}
+
+.contact textarea {
+    resize: none;
+    width: 600px;
+    padding: 20px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    background-size: 100% 100%, 100% 100%;
+    transition-duration: .5s;
+    box-shadow: none;
+    outline: none;
+}
+
+.send-btn {
+    color: #08fdd8;
+    border: 1px solid #08fdd8;
+    padding: 7px 20px;
+    font-family: 'VerdanaBold';
+    display: block;
+    position: relative;
+    left: 32.5%;
+    margin-top: 20px;
+    transition: .4s;
+}
+
+.send-btn:hover {
+    color: #000000;
+    background-color: #08fdd8;
+}
+
+.set {
+    background-image: url('../img/map.png');
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 920px;
+}
+
+.contact-text-zone {
+    margin-top: 3em;
 }
 
 @keyframes spin {

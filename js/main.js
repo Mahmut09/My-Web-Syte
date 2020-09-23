@@ -15,7 +15,19 @@ const home = document.getElementById('home'),
       iconContact = document.getElementById('icon-contact'),
 
       aboutMe = document.getElementById('about-me'),
-      name = document.querySelector('.name');
+      name = document.querySelector('.name'),
+
+      curs = document.querySelector('.cursor');
+
+const loader = document.querySelector('.preloader');
+
+loader.style.display = 'flex'
+
+const load = () => {
+    loader.style.display = 'none';
+}
+
+setTimeout(load, 200);
 
 
 home.addEventListener('mouseover', () => {
@@ -27,7 +39,6 @@ home.addEventListener('mouseout', () => {
     iconTextHome.classList.remove('active-text-icon');
     iconHome.style.opacity = '1';
 });
-
 
 about.addEventListener('mouseover', () => {
     iconTextAbout.classList.add('active-text-icon');
@@ -92,6 +103,5 @@ aboutMe.addEventListener('mouseout', (event) => {
         target.style.color = '';
         target.style.display = ''
         target.style.animation = '';
-
     }
 });
